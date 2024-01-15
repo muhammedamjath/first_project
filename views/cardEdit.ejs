@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add yor items</title>
+    <link rel="stylesheet" href="/css/addItems.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: sans-serif;
+    font-size: 50px;
+}
+label{
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.addItems{
+   position: absolute;
+   top: 10%;
+   left: 40%;
+}
+input,textarea{
+    width:500px ;
+}
+input{
+    height: 60px;
+    text-align: center;
+    font-size: larger;
+}
+textarea{
+    height: 150px;
+    font-size: large;
+}
+button{
+    height: 40px;
+    width: 150px;
+    background-color: green;
+    border: none;
+    font-size: larger;
+    border-radius: 10px;
+    color: white;
+
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Add your items :</h1>
+
+     <div class="addItems">
+        <form action="/admin/editItems/<%=getEdit._id%>" method="post" >
+        <!-- <label for="image" class="image">Add image :</label><br><br>
+        <input type="file" id="image" name="image" accept="image/*" ><br><br>
+ -->
+
+        <label for="name" class="name" >Name :</label><br></br>
+        <input type="text" name="name" id="name" value="<%= getEdit.name %>" ><br><br>
+
+        <label for="Price" class="Price">Add price ₹ :</label><br><br>
+        <input type="number" id="price" name="price" value="<%= getEdit.price %>"><br><br>
+
+        <label for="Description" class="Description">Add discription :</label><br><br>
+        <textarea name="discription" id="Description"  rows="4" ><%= getEdit.discription %></textarea><br><br>
+
+        <button type="submit">Update</button>
+    </form>
+
+    </div>
+
+    </div> 
+</body>
+</html>

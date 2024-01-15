@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    height: 500px;
+    width: 600px;
+    background-color: red;
+    position: absolute;
+    top: 17%;
+    left:31% ;
+    border-radius: 20px;
+}
+.chiled{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 20%;
+    margin-top: 15%;
+}
+#address,#number{
+    height: 40px;
+    width: 70%;
+    border-radius: 10px;
+}
+#cimage,#gender,#DOB{
+    font-size: x-large;
+    font-family: sans-serif;
+}
+::placeholder{
+    text-align: center;
+    font-size: large;
+}
+input{
+    text-align: center;
+    border: none;
+}
+input:focus{
+    outline: 2px solid blue;
+}
+#select,#dob{
+    font-size: larger;
+}
+#iimage{
+    font-size: 16px;
+}
+.submit{
+    height: 40px;
+    width: 250px;
+    position: absolute;
+    top: 85%;
+    left: 28%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: large;
+}
+.submit:hover{
+    /* transform: scale(1.1); */
+    background-color: lightgreen;
+    color: blue;
+}
+h1{
+    font-family: sans-serif;
+    position: absolute;
+    top:20px ;
+    left: 18%;
+    color: white;
+}
+.nav{
+    height: 100px;
+    width: 100vw;
+    background-color: gray;
+    position: fixed;
+    border: 2px solid black;
+}
+.fa-house{
+    height: 500px;
+    width: 30px;
+}

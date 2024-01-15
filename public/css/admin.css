@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    height: 130px;
+    width: 100%;
+    background-color: rgba(124, 106, 106, 0.275);
+    /* position: fixed; */
+    display: flex;
+}
+.brandLogo{
+    height: 130px;
+    width: 130px;
+    margin-left: 5%;
+}
+#search{
+    height: 40px;
+    width: 500px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin-top: 2.5%;
+    margin-left: 20%;
+}
+input{
+    text-align: center;
+}
+input:focus{
+    outline: 1px solid blue;
+}
+::placeholder{
+    text-align: center;
+}
+.fa-magnifying-glass{
+    font-size: x-large;
+    margin-top: 3%;
+    margin-left: -3%;
+}
+.logout{
+    height: 30px;
+    width: 150px;
+    margin-left: 300%;
+    margin-top: 30%;
+}
+.add-items{
+    height: 30px;
+    width: 150px;
+    margin-left: 80%;
+    margin-top: 30%;
+}
+.card{
+    height: 450px;
+    width: 300px;
+    background-color: #a4ac86;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 1px black;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.cardimage{
+    height: 200px;
+    width: 90%;
+    border-radius: 10px;
+    background-color: black;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.cardimageO{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.cardname{
+    color: white;
+    font-size: 25px;
+    margin-left: 35%;
+    margin-top:5% ;
+}
+.cardprice{
+    font-size: 20px;
+       color: white;
+       margin-left: 40%;
+       margin-top: 5%;
+    
+}
+.carddiscription{
+    color: white;
+    font-size: 20px;
+    margin-left: 5%;
+    margin-top: 10%;
+   
+}
+.card-container{
+    height: 450px;
+    width: 300px;
+    border-radius: 20px;
+    display: flex; 
+    
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    /* background-color: green; */
+}  

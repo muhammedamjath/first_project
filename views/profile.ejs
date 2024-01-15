@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            height: 400px;
+            width:400px ;
+            /* background-color: gray; */
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            border-radius: 20px;
+            border: 1px solid black;
+        }
+        h3{
+            font-family: sans-serif;
+            margin-top: 15px;
+            margin-left: 15px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <h3>First Name :<%=signData.firstName %></h3>
+        <h3>Last Name :<%= signData.lastName%></h3>
+        <h3>Email : <%= signData.email%></h3>
+        <h3>D O B : <%= objData.dob%></h3>
+        <h3>Gender :<%=objData.gender%> </h3>
+        <h3>Address :<%=objData.address%></h3>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+        <div class="navbar">
+                <img src="/brandlogo.png" alt="😒" class="brandLogo">
+            <input type="text" id="search" name="search" placeholder="Search Items">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            
+            <form action="/admin/logout" method="get">
+            <button type="submit" class="logout">Logout</button>
+            </form>
+            <form action="/admin/getaddItems" method="get">
+                <button class="add-items">Add items</button>
+            </form>
+        
+        </div> 
+        <div class="main">
+            <% cards.forEach((card)=>{ %>
+            <div class="card">
+                 <div class="cardimage"><img src="<%= card.image %>" alt="😁" class="cardimageO"></div>
+                <h1 class="cardname"><%= card.name %></h1>
+                 <p class="cardprice">₹ <%= card.price%> /kg</p>
+                 <p class="carddiscription">Category : <%= card.discription %></p>
+                 <button type="submit" style="height: 30px; width: 100px; background-color: #0f6fff; border-radius: 10px; border: none; margin-top: 15%; margin-left: 5%; color: white;" onclick="window.location.href='/admin/toEdit/<%=card._id%>'">Edit item</button>
+                 <button type="submit" style="height: 30px; width: 100px; background-color: red; border-radius: 10px; border: none; margin-top: 15%; margin:0% 0% 0% 22%; color: white;" onclick="window.location.href='/admin/toDelete/<%=card._id%>'" >Delete </button>
+            </div>
+            <% })%>
+        </div>
+</body>
+</html>

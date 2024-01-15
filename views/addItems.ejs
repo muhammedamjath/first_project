@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add yor items</title>
+    <link rel="stylesheet" href="/css/addItems.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Add your items :</h1>
+
+     <div class="addItems">
+        <form action="/admin/postaddItems" method="post" enctype="multipart/form-data">
+        <label for="image" class="image">Add image :</label><br><br>
+        <input type="file" id="image" name="image" accept="image/*" ><br><br>
+
+
+        <label for="name" class="name" >Name :</label><br></br>
+        <input type="text" name="name" id="name" ><br><br>
+
+        <label for="Price" class="Price">Add price ₹ :</label><br><br>
+        <input type="number" id="price" name="price"><br><br>
+
+        <label for="Description" class="Description">Add discription :</label><br><br>
+        <textarea name="discription" id="Description"  rows="4"></textarea><br><br>
+
+        <button type="submit">Add this item</button>
+    </form>
+
+    </div>
+
+    </div>
+</body>
+</html>

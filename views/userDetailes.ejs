@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user Detailes</title>
+    <link rel="stylesheet" href="/css/userDetailes.css">
+</head>
+<body>
+    
+    <div class="main">
+        <h1>Complete your profile</h1>
+        <form action="/user/pofileDetailes" method="post">
+            <div class="chiled">
+                <div class="caddress">
+                <input type="text" id="address" name="address" placeholder="Address" >
+                </div>
+
+                <div class="number">
+                <input type="number" id="number" name="number" placeholder="Phone Number">
+                </div>
+
+                <div class="cimage">
+                    <label for="image" id="cimage">Upload Image : </label>
+                <input type="file" id="iimage" name="image" accept="image/*">
+                </div>
+
+                <div class="cgender">
+                    <label for="gender" id="gender"> Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</label>
+                    <select  name="gender" id="select">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="date">
+                    <label for="dob" id="DOB">Date of Birth &nbsp;&nbsp; :</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+            </div>
+            <button type="submit" class="submit">Submit your detailes</button>
+        </form>
+    </div>
+</body>
+</html>
